@@ -9,7 +9,7 @@ body{
     font-family: 'Fjalla One', sans-serif; 
     line-height: 2.3;
 }
-.container{
+.container1{
     width: 90%;
     height: 100vh;
     margin: 0% auto;
@@ -119,8 +119,8 @@ h2{
 .section15:hover{
     transform: scale(1.5 , 1.5);
 }
-@media screen and (max-width: 420px){
-    .container{
+@media only screen and (max-width: 420px){
+    .container1{
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.5fr 0.5fr 1fr 2fr 0.5fr 0.5fr;
         gap: 8px;
@@ -132,6 +132,24 @@ h2{
             "section0"
             "section15"
             "footer";
+}
+@media only screen and (max-width: 768px){
+    .container1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 1fr 2fr 0.5fr 0.5fr;
+        gap: 8px;
+        grid-template-areas: 
+            "header"
+            "menu"
+            "section1"
+            "section3"
+            "section0"
+            "section15"
+            "footer";
+}
+
+    }
+    
 }
 
 
